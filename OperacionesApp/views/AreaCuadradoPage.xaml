@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OperacionesApp.Views.AreaCuadradoPage"
+             Title="Área del Cuadrado">
+    
+             
+    <StackLayout Padding="20" Spacing="15">
+        <Label Text="Calcular Lado:" FontSize="Medium"/>
+        <Entry x:Name="LadoEntry" Placeholder="Introduce el valor del lado" Keyboard="Numeric"/>
+
+        <Button Text="Calcular Área" Clicked="CalcularArea_Clicked"  Background="Green" TextColor="White"/>
+        <Button Text="Limpiar" Clicked="Limpiar_Clicked" Background="Red" TextColor="White"/>
+
+        <Label x:Name="ResultadoLabel" Text="Resultado: " FontSize="Large" IsVisible="False"/>
+    </StackLayout>
+</ContentPage>
+
